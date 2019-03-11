@@ -6,18 +6,13 @@
 // "el" stands for the "element" that was just clicked
 var wrongSound = document.getElementById('wrong');
 var rightSound = document.getElementById('goal');
-function removeClass(el){
-	el.classList.remove("pats-silver");
-}
-function beach2(el){
-	document.getElementById("beach_pic").src =("image/beach.jpg");
-	document.getElementById("grey_box").src =("image/beach.jpg");
-}
+
 
 a = document.getElementById("correct");
 b = document.getElementById("correct1");
 
-
+//"greenimage" stand for the image that will be switcching into once you click the correct soccer ball
+//also "if" means that once you click "soccerball.png" then "key" will show up, but while the correct soccer isn't clicked then "key" will remain hidden as "hiddenkey"
 function greenImage(el){
 	document.getElementById("correct").src =("images/soccergoall.png");
 	if (el.src.match=("images/soccergoall.png")){
@@ -28,6 +23,8 @@ function greenImage(el){
 	}
 }
 
+//"redimage" stand for the image that will be turning into when you click on the wrong soccer ball
+//"wrongsound" means thats the sound that will be playing everytime you click on a wrong soccer ball
 function redImage(el){
 	el.src =("images/redx.png");
     if (el.src.match=("images/redx.png")){
